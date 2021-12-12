@@ -19,7 +19,7 @@ FILE = args.FILE
 DEVICE = args.device
 TIMEOUT = args.timeout
 
-print('TIMEOUT', TIMEOUT)
+print('TIMEOUT', TIMEOUT, 's')
 
 qa = {}
 
