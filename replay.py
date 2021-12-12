@@ -27,6 +27,7 @@ for l in open(FILE, 'r'):
     l = l.replace('\n', '')
     d = l[3:]
     if l.startswith('<>'):
+        print('<>', d)
         card = json.loads(d)
         if card['idm'].lower() == 'random':  # TODO
             pass
