@@ -51,9 +51,10 @@ rsp = (len(tt3_cmd) + 1).to_bytes(1, "big") + tt3_cmd
 # print(qa)
 
 while True:
-    print(rsp.hex())
+    print('<<', rsp.hex())
     try:
         com = fromhex(qa[rsp.hex()])
+        print('>>', com.hex())
     except KeyError:
         print('Unknown Command')
         com = None
