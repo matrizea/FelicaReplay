@@ -25,14 +25,15 @@ qa = {}
 
 for l in open(FILE, 'r'):
     l = l.replace('\n', '')
+    d = l[3:]
     if l.startswith('<>'):
-        card = json.loads(l[3:])
+        card = json.loads(d)
         if card['idm'].lower() == 'random':  # TODO
             pass
     if l.startswith('<<'):
-        q = l[3:].lower()
+        q = d.lower()
     if l.startswith('>>'):
-        a = l[3:].lower()
+        a = d.lower()
         qa[q] = a
 
 sensf_res = fromhex('01'+card['idm']+card['pmm']+card['sys'])
