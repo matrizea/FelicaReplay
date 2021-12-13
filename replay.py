@@ -8,15 +8,16 @@ parser = argparse.ArgumentParser(
     description='Replay felica exchange', epilog='v1.0')
 
 parser.add_argument('FILE', help='Replay File')
-parser.add_argument('-d', '--device', help='Device',
-                    required=True)  # TODO auto device detection
+parser.add_argument('-d', '--device', help='Device')
 parser.add_argument('-t', '--timeout', help='timeout',
                     type=float, default=0.005)
 
 args = parser.parse_args()
 
 FILE = args.FILE
-DEVICE = args.device
+DEVICE = 'usb'
+if args.device:
+    DEVICE = args.device
 TIMEOUT = args.timeout
 
 print('TIMEOUT', TIMEOUT, 's')
