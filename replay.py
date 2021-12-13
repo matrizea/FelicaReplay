@@ -50,8 +50,6 @@ if target is None:
 tt3_cmd = target.tt3_cmd
 rsp = (len(tt3_cmd) + 1).to_bytes(1, "big") + tt3_cmd
 
-# print(qa)
-
 while True:
     print('<<', rsp.hex())
     try:
