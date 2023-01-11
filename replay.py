@@ -5,9 +5,9 @@ import json
 fromhex = bytearray.fromhex
 
 parser = argparse.ArgumentParser(
-    description='Replay felica exchange', epilog='v1.1')
+    description='RePlay FeliCa Exchange', epilog='v1.1')
 
-parser.add_argument('FILE', help='Replay File')
+parser.add_argument('FILE', help='RePlay File')
 parser.add_argument('-d', '--device', help='Device')
 parser.add_argument('-t', '--timeout', help='timeout',
                     type=float, default=0.005)

@@ -1,12 +1,14 @@
-# FelicaReplay
-Replay Felica Exchange
+# FelicaRePlay
+
+RePlay FeliCa Exchange
 
 # Description
-Standalone Replay Module
+
+Standalone RePlay Module
 
 # Usage
-Save [FelicaRelay](https://github.com/OLIET2357/FelicaRelay) (>=2.0) output to file, then
 
+Save [FelicaRelay](https://github.com/OLIET2357/FelicaRelay) (v2.X) output to file, then
 `python replay.py [FILE]`.
 
-It can emulate the card Standalone.
+It will emulate the card standalone.
